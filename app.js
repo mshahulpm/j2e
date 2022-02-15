@@ -3,7 +3,9 @@ const fs = require('fs');
 const path = require('path');
 const ExcelJS = require('exceljs');
 
-const args = process.argv.slice(2)[0];
+const args = './demo/d.json';
+
+hello();
 
 createXl(args);
 
@@ -44,12 +46,13 @@ function createXl(line) {
             Object.keys(data).sort().forEach(key => {
                 worksheet.addRow({
                     name: key,
-                    en: data[key]
+                    en: data[key].toString()
                 });
             })
 
             workbook.xlsx.writeFile(path.join(__dirname, 'output2.xlsx'))
             console.log('Output file saved to: ', path.join(__dirname, 'output2.xlsx'));
+            workbook.csv.writeFile(path.join(__dirname, 'output2.csv'))
             exitProcess(2)
         } catch (error) {
             console.log('Invalid JSON File')
@@ -87,6 +90,8 @@ function createXl(line) {
             })
             workbook.xlsx.writeFile(path.join(__dirname, 'output2.xlsx'))
             console.log('Output file saved to: ', path.join(__dirname, 'output2.xlsx'));
+            workbook.csv.writeFile(path.join(__dirname, 'output2.csv'))
+
             exitProcess(3)
 
         } catch (error) {
@@ -121,7 +126,7 @@ function hello() {
         });
     })
 
-    workbook.xlsx.writeFile(path.join(__dirname, 'output2.xlsx'))
-
+    workbook.xlsx.writeFile(path.join(__dirname, 'output.xlsx'))
+    workbook.csv.writeFile(path.join(__dirname, 'output.csv'))
 
 }
