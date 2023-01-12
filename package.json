@@ -1,5 +1,26 @@
 {
-  "dependencies": {
-    "exceljs": "^4.3.0"
-  }
+  "name": "jsontoexcel",
+  "version": "1.0.0",
+  "description": "CLI tool for converting json to excel and vice-versa ",
+  "main": "./bin.index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mshahulpm/nodejs-json-to-excel-cli.git"
+  },
+  "keywords": [
+    "cli",
+    "json",
+    "excel",
+    "json-to-excel",
+    "excel-to-json"
+  ],
+  "author": "Mohammed Shahul",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mshahulpm/nodejs-json-to-excel-cli/issues"
+  },
+  "homepage": "https://github.com/mshahulpm/nodejs-json-to-excel-cli#readme"
 }
