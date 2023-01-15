@@ -14,8 +14,8 @@ const program = new Command()
 program
     .version("1.0.0")
     .description("CLI for converting json to excel and vice versa")
-    .option("-j2e, --j2ePath  <value>", "Convert JSON to Excel (a file or directory of multiple json file)")
-    .option("-e2j, --e2jPath  <value>", "Convert JSON to Excel (a file or dir of multiple excel file)")
+    .option("-j, --jsonPath  <value>", "Convert JSON to Excel (a file or directory of multiple json file)")
+    .option("-e, --excelPath  <value>", "Convert JSON to Excel (a file or dir of multiple excel file)")
 
     .parse(process.argv);
 
@@ -27,8 +27,8 @@ const options = program.opts();
  *   Or Convert all json files inside a directory to excel 
  */
 
-if (options.j2ePath) {
-    jsonToExcel(options.j2ePath);
+if (options.jsonPath) {
+    jsonToExcel(options.jsonPath);
 }
 
 
