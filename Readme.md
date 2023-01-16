@@ -2,7 +2,7 @@
 ## JSON to EXCEL and EXCEL to JSON CLI 
 
 j2e is a cli tool for converting json files to excel files and excel files to json file. This tool is really helpful when you work with multi-lingual projects <br>
-This package is released under the [MIT license](https://github.com/mshahulpm/LICENSE) .<br>
+This package is released under the [MIT license](https://github.com/mshahulpm/j2e/blob/main/License.md)<br>
 
 
 Install package
