@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mshahulpm/nodejs-json-to-excel-cli.git"
+    "url": "git+https://github.com/mshahulpm/j2e.git"
   },
   "keywords": [
     "cli",
@@ -23,9 +23,9 @@
   "author": "Mohammed Shahul",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mshahulpm/nodejs-json-to-excel-cli/issues"
+    "url": "https://github.com/mshahulpm/j2e/issues"
   },
-  "homepage": "https://github.com/mshahulpm/nodejs-json-to-excel-cli#readme",
+  "homepage": "https://github.com/mshahulpm/j2e#readme",
   "dependencies": {
     "commander": "^9.5.0",
     "exceljs": "^4.3.0",
