@@ -28,9 +28,21 @@ async function readJSON(file_path) {
     })
 }
 
-
+async function checkDirExistOrCreate(dir) {
+    return new Promise((resolve, reject) => {
+        fs.access(dir, (err) => {
+            if (err) {
+                fs.mkdirSync(dir)
+                resolve()
+            } else {
+                resolve()
+            }
+        })
+    })
+}
 
 module.exports = {
     listDirContents,
-    readJSON
+    readJSON,
+    checkDirExistOrCreate
 }

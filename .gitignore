@@ -2,3 +2,4 @@ node_modules
 *.xlsx
 *.csv
 en
+output
