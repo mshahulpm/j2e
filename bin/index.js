@@ -2,7 +2,6 @@
 const { Command } = require('commander');
 const figlet = require("figlet");
 const chalk = require('chalk')
-const ora = require('ora')
 
 // lib 
 const { jsonToExcel } = require('../lib/JsonToExcel');
@@ -35,7 +34,7 @@ if (options.jsonPath) {
 /**
  *   Convert a excel file to json 
  */
-if (options.excelPath) {
+else if (options.excelPath) {
     excelToJson(options.excelPath)
 }
 

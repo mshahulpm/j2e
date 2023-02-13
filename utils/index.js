@@ -41,8 +41,23 @@ async function checkDirExistOrCreate(dir) {
     })
 }
 
+/**
+ * 
+ * @param {number} time 
+ */
+async function sleep(time) {
+
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(1)
+        }, time)
+    })
+
+}
+
 module.exports = {
     listDirContents,
     readJSON,
-    checkDirExistOrCreate
+    checkDirExistOrCreate,
+    sleep
 }

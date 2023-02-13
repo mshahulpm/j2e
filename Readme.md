@@ -34,3 +34,13 @@ You will get out.xlsx with single sheet
 ```
 
 You will get out.xlsx with multiple sheets 
+
+##### convert excel to json (csv/xlsx)
+
+```shell
+ j2e -e file.csv  
+```
+
+currently 3 possible conversion option available , example will be printed on the terminal you can choose required option 
+
+converted files will be saved to a directory named "output"
